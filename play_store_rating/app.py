@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd 
 from textblob import TextBlob
+st.set_page_config(page_title="Chrome Review App",page_icon="chart_with_upwards_trend",layout="wide",initial_sidebar_state="expanded",)
 
 st.header("Reviews Sentiment Look Up")
-st.sidebar.warning("Please Provide Password and then upload the **Reviews.csv** file in Below Space.")
+st.sidebar.warning("Please Provide Password and then upload the **Chrome_reviews.csv** file in Below Space.")
 
 def check_password():
     s1,s2,s3 = st.columns(3)
@@ -38,9 +39,9 @@ if check_password():
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
         # loading the data into a csv file and stroing it for further use.
-        st.sidebar.info("After sucessfully uploaded the csv file click on Load Data to transform the csv into the desired data")
+        st.sidebar.info("After sucessfully uploading of csv file click on Transform Data to transform the csv into the desired data")
 
-        if st.button("Load Data"):
+        if st.button("Transform Data"):
             # st.dataframe(df)
             df.to_csv('data/main_data.csv', index=False)
 
@@ -66,5 +67,17 @@ if check_password():
             df_merge = pd.merge(df_start, df_new, on="ID")
             st.subheader("List of Positive Comments with Low Rating")
             st.dataframe(df_merge)
+            def convert_df(df):
+                # IMPORTANT: Cache the conversion to prevent computation on every rerun
+                return df.to_csv().encode('utf-8')
 
+            csv = convert_df(df_merge)
+
+            st.download_button(
+                label="Download data as CSV",
+                data=csv,
+                file_name='Transformed_data.csv',
+                mime='text/csv',
+            )
+          
             # st.dataframe(df_new)
