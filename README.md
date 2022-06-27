@@ -26,10 +26,19 @@
 </br>2. pip install Textblob
 </br>3. in same directory , streamlit run app.py
 </br>4. check for requirements and satisfy it.
-</br>5. Password of the application is <b>123<b/>
+</br>5. Password of the application is <b>123</b>
 </br>6. Upload the similar dataset file which is given in the link - https://drive.google.com/file/d/1SuiFw4MYxOBlqsRgyXLfch28-gzx8bX6/view?usp=sharing
 </br>7. Hit Load Data and get the output as a Dataframe. which consist of Positive Reviews with Low Rating(1 and 2), with that App-Id and descriptions. 
 </br>8. Download the transformed Data as csv option is given.
+
+</br><b>Question-5. --> Write about any difficult problem that you solved. (According to us difficult - is something which 90% of people would have only 10% probability in getting a similarly good solution).</b>
+</br><b>Answer for Question-5.</b>
+</br>In my internship period I was given a task to do a Dashboard it was little complex and above the time, but I managed to finish it of within 2 weeks.
+In my college Days 
+</br>I worked with my Lecturer for finding out the insights from Student Data and presented in-front of the college committee for the Performance Index of Students.
+And it came 90% accurate for the next batch of students whe tested.
+
+
 
 </br><b>Link for Live Demo -  https://dashsaurav-reviews-chrome-app-app-qhza0l.streamlitapp.com/</b>
 
