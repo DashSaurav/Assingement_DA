@@ -29,6 +29,7 @@
 </br>5. Password of the application is <b>123<b/>
 </br>6. Upload the similar dataset file which is given in the link - https://drive.google.com/file/d/1SuiFw4MYxOBlqsRgyXLfch28-gzx8bX6/view?usp=sharing
 </br>7. Hit Load Data and get the output as a Dataframe. which consist of Positive Reviews with Low Rating(1 and 2), with that App-Id and descriptions. 
+</br>8. Download the transformed Data as csv option is given.
 
 </br><b>Link for Live Demo -  https://dashsaurav-reviews-chrome-app-app-qhza0l.streamlitapp.com/</b>
 
